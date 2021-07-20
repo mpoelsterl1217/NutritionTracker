@@ -15,6 +15,10 @@
 		C273305826A728A3001D2020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C273305626A728A3001D2020 /* LaunchScreen.storyboard */; };
 		C273306326A728A3001D2020 /* NutritionTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C273306226A728A3001D2020 /* NutritionTrackerTests.swift */; };
 		C273306E26A728A3001D2020 /* NutritionTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C273306D26A728A3001D2020 /* NutritionTrackerUITests.swift */; };
+		C27330FC26A780D5001D2020 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27330FB26A780D5001D2020 /* DailyViewController.swift */; };
+		C27330FE26A780E1001D2020 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27330FD26A780E1001D2020 /* SummaryViewController.swift */; };
+		C273310026A780EE001D2020 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27330FF26A780EE001D2020 /* GoalsViewController.swift */; };
+		C273310226A78106001D2020 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C273310126A78106001D2020 /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		C273306926A728A3001D2020 /* NutritionTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutritionTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C273306D26A728A3001D2020 /* NutritionTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionTrackerUITests.swift; sourceTree = "<group>"; };
 		C273306F26A728A3001D2020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C27330FB26A780D5001D2020 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
+		C27330FD26A780E1001D2020 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		C27330FF26A780EE001D2020 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		C273310126A78106001D2020 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,10 @@
 				C273304B26A728A0001D2020 /* AppDelegate.swift */,
 				C273304D26A728A0001D2020 /* SceneDelegate.swift */,
 				C273304F26A728A0001D2020 /* ViewController.swift */,
+				C27330FB26A780D5001D2020 /* DailyViewController.swift */,
+				C27330FD26A780E1001D2020 /* SummaryViewController.swift */,
+				C27330FF26A780EE001D2020 /* GoalsViewController.swift */,
+				C273310126A78106001D2020 /* SettingsTableViewController.swift */,
 				C273305126A728A0001D2020 /* Main.storyboard */,
 				C273305426A728A3001D2020 /* Assets.xcassets */,
 				C273305626A728A3001D2020 /* LaunchScreen.storyboard */,
@@ -260,7 +272,11 @@
 			files = (
 				C273305026A728A0001D2020 /* ViewController.swift in Sources */,
 				C273304C26A728A0001D2020 /* AppDelegate.swift in Sources */,
+				C27330FC26A780D5001D2020 /* DailyViewController.swift in Sources */,
 				C273304E26A728A0001D2020 /* SceneDelegate.swift in Sources */,
+				C27330FE26A780E1001D2020 /* SummaryViewController.swift in Sources */,
+				C273310026A780EE001D2020 /* GoalsViewController.swift in Sources */,
+				C273310226A78106001D2020 /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
