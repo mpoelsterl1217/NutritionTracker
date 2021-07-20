@@ -399,16 +399,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Summary" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeH-9L-HZl">
-                                <rect key="frame" x="20" y="44" width="374" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Summary" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeH-9L-HZl">
+                                <rect key="frame" x="20" y="44" width="270" height="50.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chart" translatesAutoresizingMaskIntoConstraints="NO" id="agb-IW-Yp9">
+                                <rect key="frame" x="20" y="102.5" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="agb-IW-Yp9" secondAttribute="height" multiplier="374:374" id="Bft-0E-zIF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNo-X5-7uw">
+                                <rect key="frame" x="20" y="492.5" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.94999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="J0K-fR-qfL">
+                                <rect key="frame" x="20" y="524.5" width="374" height="4"/>
+                                <color key="tintColor" name="AccentColor"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJM-wt-M6z">
+                                <rect key="frame" x="20" y="564.5" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="N0I-1h-HYS">
+                                <rect key="frame" x="20" y="596.5" width="374" height="4"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbohydrates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdS-h4-ZdU">
+                                <rect key="frame" x="20" y="636.5" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="i1X-G6-4Fn">
+                                <rect key="frame" x="20" y="668.5" width="374" height="4"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNc-Be-KIC">
+                                <rect key="frame" x="20" y="708.5" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="9m3-44-Uyl">
+                                <rect key="frame" x="20" y="740.5" width="374" height="4"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nES-NI-2dD"/>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9m3-44-Uyl" firstAttribute="leading" secondItem="nES-NI-2dD" secondAttribute="leading" constant="20" id="09Y-W1-w5m"/>
+                            <constraint firstItem="RdS-h4-ZdU" firstAttribute="top" secondItem="N0I-1h-HYS" secondAttribute="bottom" constant="36" id="0ga-0f-lOP"/>
+                            <constraint firstItem="jNo-X5-7uw" firstAttribute="leading" secondItem="nES-NI-2dD" secondAttribute="leading" constant="20" id="19t-LB-sR3"/>
+                            <constraint firstItem="lJM-wt-M6z" firstAttribute="top" secondItem="J0K-fR-qfL" secondAttribute="bottom" constant="36" id="1iC-ms-Lsw"/>
+                            <constraint firstItem="aeH-9L-HZl" firstAttribute="leading" secondItem="nES-NI-2dD" secondAttribute="leading" constant="20" id="5JU-DS-6Xb"/>
+                            <constraint firstItem="nES-NI-2dD" firstAttribute="trailing" secondItem="N0I-1h-HYS" secondAttribute="trailing" constant="20" id="5uj-gt-Wc1"/>
+                            <constraint firstItem="aNc-Be-KIC" firstAttribute="top" secondItem="i1X-G6-4Fn" secondAttribute="bottom" constant="36" id="A8t-5Y-6kD"/>
+                            <constraint firstItem="agb-IW-Yp9" firstAttribute="top" secondItem="aeH-9L-HZl" secondAttribute="bottom" constant="8" symbolic="YES" id="DGh-3s-hXq"/>
+                            <constraint firstItem="N0I-1h-HYS" firstAttribute="leading" secondItem="nES-NI-2dD" secondAttribute="leading" constant="20" id="E6A-Z1-Efn"/>
+                            <constraint firstItem="i1X-G6-4Fn" firstAttribute="top" secondItem="RdS-h4-ZdU" secondAttribute="bottom" constant="8" id="GNp-AA-iks"/>
+                            <constraint firstItem="nES-NI-2dD" firstAttribute="trailing" secondItem="aNc-Be-KIC" secondAttribute="trailing" constant="20" id="P9e-Ne-ZcF"/>
+                            <constraint firstItem="N0I-1h-HYS" firstAttribute="top" secondItem="lJM-wt-M6z" secondAttribute="bottom" constant="8" id="Rad-t6-8Mc"/>
+                            <constraint firstItem="9m3-44-Uyl" firstAttribute="top" secondItem="aNc-Be-KIC" secondAttribute="bottom" constant="8" id="TJ3-i4-Goq"/>
+                            <constraint firstItem="agb-IW-Yp9" firstAttribute="leading" secondItem="nES-NI-2dD" secondAttribute="leading" constant="20" id="XIe-R5-7vI"/>
+                            <constraint firstItem="i1X-G6-4Fn" firstAttribute="leading" secondItem="nES-NI-2dD" secondAttribute="leading" constant="20" id="XN7-Zy-yIj"/>
+                            <constraint firstItem="nES-NI-2dD" firstAttribute="trailing" secondItem="jNo-X5-7uw" secondAttribute="trailing" constant="20" id="YB9-Tw-Ch7"/>
+                            <constraint firstItem="nES-NI-2dD" firstAttribute="trailing" secondItem="lJM-wt-M6z" secondAttribute="trailing" constant="20" id="bCG-Er-NEV"/>
+                            <constraint firstItem="nES-NI-2dD" firstAttribute="trailing" secondItem="RdS-h4-ZdU" secondAttribute="trailing" constant="20" id="ceA-lQ-t44"/>
+                            <constraint firstItem="aNc-Be-KIC" firstAttribute="leading" secondItem="nES-NI-2dD" secondAttribute="leading" constant="20" id="d2J-rF-TbZ"/>
+                            <constraint firstItem="lJM-wt-M6z" firstAttribute="leading" secondItem="nES-NI-2dD" secondAttribute="leading" constant="20" id="e8j-20-GLr"/>
+                            <constraint firstItem="nES-NI-2dD" firstAttribute="trailing" secondItem="i1X-G6-4Fn" secondAttribute="trailing" constant="20" id="eTp-uL-xSN"/>
+                            <constraint firstItem="aeH-9L-HZl" firstAttribute="top" secondItem="nES-NI-2dD" secondAttribute="top" id="eiV-1k-boJ"/>
+                            <constraint firstItem="jNo-X5-7uw" firstAttribute="top" secondItem="agb-IW-Yp9" secondAttribute="bottom" constant="16" id="hOA-LJ-bGY"/>
+                            <constraint firstItem="nES-NI-2dD" firstAttribute="trailing" secondItem="J0K-fR-qfL" secondAttribute="trailing" constant="20" id="hkG-3G-uJe"/>
+                            <constraint firstItem="J0K-fR-qfL" firstAttribute="leading" secondItem="nES-NI-2dD" secondAttribute="leading" constant="20" id="kEm-DC-9st"/>
+                            <constraint firstItem="nES-NI-2dD" firstAttribute="trailing" secondItem="agb-IW-Yp9" secondAttribute="trailing" constant="20" id="m4n-K5-oV4"/>
+                            <constraint firstItem="J0K-fR-qfL" firstAttribute="top" secondItem="jNo-X5-7uw" secondAttribute="bottom" constant="8" id="pex-Pq-57H"/>
+                            <constraint firstItem="RdS-h4-ZdU" firstAttribute="leading" secondItem="nES-NI-2dD" secondAttribute="leading" constant="20" id="vIe-Nj-stv"/>
+                            <constraint firstItem="nES-NI-2dD" firstAttribute="trailing" secondItem="9m3-44-Uyl" secondAttribute="trailing" constant="20" id="wGY-az-nt6"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Summary" image="chart.pie.fill" catalog="system" id="mKK-2g-ab9"/>
                 </viewController>
@@ -438,6 +514,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Chart" width="360" height="360"/>
         <image name="apps.iphone" catalog="system" width="108" height="128"/>
         <image name="bell.badge.fill" catalog="system" width="128" height="128"/>
         <image name="book.fill" catalog="system" width="128" height="102"/>
@@ -455,6 +532,12 @@
         <namedColor name="AccentColor">
             <color red="1" green="0.17599999904632568" blue="0.33299997448921204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
