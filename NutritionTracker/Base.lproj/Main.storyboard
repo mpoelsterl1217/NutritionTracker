@@ -436,7 +436,7 @@
             <objects>
                 <tableViewController id="Yof-Dh-fIO" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="9ev-6X-Kh5">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="622"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="622.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <sections>
                             <tableViewSection id="hoe-i5-cQ4">
